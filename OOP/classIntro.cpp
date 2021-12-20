@@ -1,23 +1,33 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-class vardaan
+class vehicle
 {
+private:
+    int one = 1;
+    int two = 2;
+    string hi = "hi";
+    string hello = " hello";
+
 public:
-    int goodBoy = 1;
-    int isGoodBoy()
+    void add()
     {
-        cout << "Good Boy" << endl;
+        cout << one + two << endl;
+    }
+
+    void joinString()
+    {
+        cout << hi + hello << endl;
     }
 };
 
 int main()
 {
-    vardaan obj;
+    vehicle v1;
 
-    cout << obj.goodBoy << endl;
-
-    obj.isGoodBoy();
+    v1.add();
+    v1.joinString();
 
     return 0;
 }
