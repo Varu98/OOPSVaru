@@ -7,14 +7,15 @@ public:
     int goodBoy = 1;
     int isGoodBoy()
     {
-        printf("good boy \n");
+        cout << "Good Boy" << endl;
     }
 };
 
 int main()
 {
     vardaan obj;
-    printf("good boy \n%d", obj.goodBoy);
+
+    cout << obj.goodBoy << endl;
 
     obj.isGoodBoy();
 
